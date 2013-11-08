@@ -106,6 +106,7 @@ enum {
 	BINDER_DEBUG_TOP_ERRORS		    = 1U << 16,
 };
 static uint32_t binder_debug_mask;
+
 module_param_named(debug_mask, binder_debug_mask, uint, S_IWUSR | S_IRUGO);
 
 static bool binder_debug_no_lock;
