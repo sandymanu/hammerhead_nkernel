@@ -102,6 +102,16 @@ config ATMEL_TCB_CLKSRC_BLOCK
 	  TC can be used for other purposes, such as PWM generation and
 	  interval timing.
 
+config BLUEDROID_PM
+	tristate "Bluedroid_pm driver support"
+	help
+	  Bluetooth Bluedroid power management Driver.
+	  This driver provides power control and dynamic active power saving
+	  mechanism for bluetooth radio devices.
+
+	  Say Y here to compile support for bluedroid_pm support into the kernel
+	  or say M to compile it as module (bluedroid_pm).
+
 config IBM_ASM
 	tristate "Device driver for IBM RSA service processor"
 	depends on X86 && PCI && INPUT && EXPERIMENTAL
